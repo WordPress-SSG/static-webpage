@@ -20,7 +20,7 @@ sync_files() {
 
 # Call the function with arguments
 sync_files "/wp-ssg/plugins" "/data/$DOMAIN/wp-content/plugins"
-sync_files "/tmp/contents/wp-content-$DOMAIN-unzipped/var/www/html/wp-content" "/data/$DOMAIN/wp-content/"
+sync_files "/tmp/contents/wp-content-$DOMAIN-unzipped/var/www/html/wp-content" "/data/$DOMAIN/wp-content"
 
 echo "JavaScript and CSS files have been copied successfully!"
 
