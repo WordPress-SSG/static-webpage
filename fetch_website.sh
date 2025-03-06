@@ -14,8 +14,8 @@ DEST_DIR="/data/$DOMAIN/wp-content/plugins"
 # Ensure the destination directory exists
 mkdir -p "$DEST_DIR"
 
-# Find and copy .js and .css files while preserving directory structure
-rsync -av --include="*/" --include="*.js" --include="*.css" --exclude="*" "$SRC_DIR/" "$DEST_DIR/"
+# Find and copy .js, .css, and image files while preserving directory structure
+rsync -av --include="*/" --include="*.js" --include="*.css" --include="*.jpg" --include="*.png" --include="*.gif" --exclude="*" "$SRC_DIR/" "$DEST_DIR/"
 
 echo "JavaScript and CSS files have been copied successfully!"
 
