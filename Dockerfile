@@ -1,7 +1,7 @@
 FROM alpine:latest
 
-# Install wget and bash (for better script handling)
-RUN apk add --no-cache wget bash
+# Install wget, bash, and rsync (for better script handling and file synchronization)
+RUN apk add --no-cache wget bash rsync
 
 # Set working directory
 WORKDIR /data
